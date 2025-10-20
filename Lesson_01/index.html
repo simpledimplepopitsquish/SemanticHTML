@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 01</title>
+</head>
+<body>
+    <!--Semantics are the meaning of words, or phrases, in a language. 
+    In HTML, which is a language, elements have their own semantic meaning too.
+    In fact, you can think of your HTML document like you would a text document. 
+    And much like a text document, you might have headings, images, bold text, 
+    and other formatting.-->
+
+    <!--The semantic meaning of an element refers to what special information that element conveys.
+    The semantic meaning of a p element, for example, is a paragraph of text-->
+
+    <p>
+      Let me tell you about my fantastic holiday in Paris.
+      I saw the impressive Eiffel Tower up close!
+    </p>
+
+    <!--Most elements have semantic meaning. The div element is one of the very few that does not.-->
+
+    <div>
+      This is just a generic container with no special meaning.
+    </div>
+
+    <!--But why is this important?-->
+
+    <!--Using semantic elements helps browsers, search engines, and assistive technologies
+    understand the structure and content of your web pages better.-->
+
+    <!--Finally, using correct semantic elements can improve your development experience. 
+    Rather than having to sift through a bunch of developments to find your navigation bar, 
+    you can edit the nav element directly and know what you're changing.-->
+
+    <!--Why is it Important to Have Good Structural Hierarchy?-->
+
+    <!--The most important aspect of creating a structural hierarchy is the proper use of heading elements. 
+    Heading elements are numbered as h1, h2, h3, and so on. 
+    These numbers represent the heading level for that element.
+
+    Your h1 element is your top-level heading, and it should typically come before all of your content.
+
+    Your h2 element is your subheading. 
+    It should always come after your h1 and might come after some introductory text. 
+    Unlike an h1 element, you can have multiple h2 elements on your page.
+    You'll often do this to delineate different sections of content.
+
+    Following the pattern, your h3 element should always come after an h2 element. 
+    That is, you should never skip directly from h1 to h3. 
+    You can, however, have multiple heading elements at the same level. -->
+
+    <div>
+        <section>
+            <h1>freeCodeCamp</h1>
+            <h2>Learn Front-End Development</h2>
+            <h2>Learn Back-End Development</h2>
+            <h3>just text</h3>
+        </section>
+    </div>
+
+    <!--It may be tempting to use a specific heading element because of its styling, 
+    such as h1 for large text.-->
+        <article>
+            <p>
+                Here is some
+                <h1>Large Text</h1>
+            </p>
+        </article>
+    <!--Instead, you should choose the appropriate element for your document structure 
+    and use CSS to achieve the styling you'd like.-->
+
+    <!--Using the right hierarchy is important for accessibility. 
+    Assistive technologies, like screen readers, rely on the structure of a web page 
+    to determine how to parse and announce that web page to the user. 
+    Using an h3 element after an h1 might cause a screen reader user to believe 
+    they have accidentally skipped over important content, due to the lack of an h2 element.
+    
+    Proper structure is also important for SEO. 
+    Search engines use automation to parse the content of your web page and determine when and where 
+    it should show up in results. If your structure is malformed, 
+    search engines may not be able to rank you very well in the relevant search results.
+    
+    Finally, depending on how incorrect your structure is, your HTML may not even be technically valid. 
+    When this happens, the web browser has to effectively guess what you meant to do. 
+    And what it guesses might not even be what you want at all.-->
+
+    <!--What Is the Difference Between Presentational and Semantic HTML?-->
+
+    <!--Presentational HTML refers to elements that are used purely for visual formatting. 
+    In the early days of HTML, developers would use elements like the center, big, and font elements. 
+    But in modern web development you shouldn't use these types of elements, 
+    because of their limitations and negative impact on accessibility and maintainability.
+    (Many presentational HTML elements are deprecated, 
+    which means that they are outdated and no longer recommended. 
+    There are better ways to get the same results. 
+    However, it is helpful to know that they exist, so we'll take a look at some examples.)-->
+
+    <div>
+        <center>This text is centered.</center>
+        <big>This text is big.</big>
+        <font color="red" size="2">This text is red and small.</font>
+    </div>
+    <!--While this element still works, 
+    you should not use it because the font size and color should always be set in CSS, 
+    not in HTML.-->
+
+    <!--Semantic HTML, on the other hand, uses elements according to their meaning and purpose.
+    Search engines can easily understand your website when you use semantic HTML. 
+    It's also helpful for accessibility purposes, 
+    because screen readers need semantic information to describe what's on the web page.-->
+
+    <!--Examples of semantic HTML elements include:
+
+    The header element for defining the header of the document, or section.
+    The navigation section element, nav, for sections with navigation links.
+    The section element for grouping related information.
+    The figure element for illustrations and diagrams.
+    The footer element for defining the footer of the document, or section.
+    -->
+    
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+
+
+
+</body>
+</html>
