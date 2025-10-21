@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuanced Semantic Elements</title>
+</head>
+<body>
+    <!--When Should You Use the Emphasis Element Over the Idiomatic Text Element?-->
+
+
+    <!--
+        The idiomatic text element, i, was originally used for presentational purposes to display the text in italics. 
+        But now, it is frequently used for highlighting alternative voice or mood, 
+        idiomatic terms from another language, technical terms, and thoughts.
+    -->
+
+    <p>There is a certain <i lang="fr">je ne sais quoi</i> in the air.</p>
+    
+    <!--
+        The lang attribute inside the open <i> tag is used to specify the language of the content. 
+        In this case, the language would be French. 
+        The i element does not indicate if the text is important or not, 
+        it only shows that it's somehow different from the surrounding text.
+    -->
+    
+    <!--
+        If you do need to emphasize the importance of the text, 
+        you can use a similar semantic element called the emphasis element, em. 
+        This is usually recommended if you need to provide more context. 
+        You should use this element for parts of the text that require a special emphasis compared to surrounding text. 
+        It's usually limited to only a few words, because it can alter the meaning of the sentence.
+    -->
+
+    <p>
+        Never give up on <em>your</em> dreams.
+        <!--
+            In the browser you would see the word your is italicized to tell readers 
+            that this is an important word in the sentence.
+        -->
+    </p>
+
+    
+    <!--When Should You Use the Strong Element Over the Bring Attention To Element?-->
+
+
+    <!--
+        The bring attention to element, b, is used to draw attention to text without conveying any extra importance or emphasis. 
+        It is often used for keywords, product names, or other text that needs to stand out visually.
+    -->
+    <p>Get the new <b>SuperWidget 3000</b> today!</p>
+    <!--This visual emphasis will draw readers attention to the product names.-->
+
+    <!--
+        If you need to emphasize the importance of the text, you should use the strong element 
+        instead of the b element.
+        Strong is a semantic HTML element that emphasizes text that is crucial, or urgent.
+    -->
+    <p>
+        <strong>Warning:</strong> Do not operate heavy machinery after consuming alcohol.
+        <!--
+            In the browser you would see the word Warning is bolded to indicate 
+            that this is an important part of the sentence.
+        -->
+    </p>
+
+    <!--
+        In summary, use the i and b elements for visual differentiation without added importance, 
+        and use the em and strong elements when you need to convey emphasis or importance in your text.
+        Visually both are very similar, because they are both rendered as bold by default. 
+        But their meanings are quite different. 
+        While the "bring attention to" element only draws attention to the text, 
+        without indicating the higher level of importance, the strong element does more than that. 
+        It conveys a sense of importance, or urgency. 
+        This is their main difference.    
+    -->
+
+    <!--What Are Description Lists, and When Should You Use Them?-->
+
+    <!--
+        Description lists are perfect for presenting terms and definitions in an organized and 
+        easy-to-read format, like in a glossary, or real dictionary, 
+        where you can find words with their corresponding definitions.
+    -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>A markup language for creating web pages.</dd>
+
+        <dt>CSS</dt>
+        <dd>A style sheet language used for describing the presentation of a document written in HTML.</dd>
+
+        <dt>JavaScript</dt>
+        <dd>A programming language commonly used to create interactive effects within web browsers.</dd>
+    </dl>
+    <!--
+        You will need three HTML elements to define a description list:
+        1. The <dl> element defines the description list itself.
+        2. The <dt> element defines a term (or name) in the description list.
+        3. The <dd> element provides the definition, or description, of the term.
+    -->
+    <!--
+        Other use cases for description lists include product specifications, frequently asked questions, 
+        contact information, and metadata. 
+        Essentially, when you have two related pieces of information in a key-value pair format, 
+        where one acts as a label, the key, and the other acts as additional related information, the value, 
+        you can use a description list.
+    -->
+</body>
+</html>
