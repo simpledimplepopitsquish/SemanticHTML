@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text and Time Semantic Elements</title>
+</head>
+<body>
+    <!--How Do Block and Inline Quotes Work in HTML?-->
+    <!--
+        In HTML, quoted elements are used to distinguish quoted text from the surrounding content. 
+        This gives the quoted text a format that is easy to identify.
+        You should use the block quotation element for representing a section quoted from another source. 
+        It's mainly used for extended quotations. 
+        If the source of the quote has an address, you can cite it with the cite attribute.
+        (the attribute doesn't really show the source to the user. It only works behind the scenes.) 
+        The value of this attribute should be a valid URL.
+        If you want to start and end the block quote with quotation marks, 
+        you may need to write them explicitly within the text.  
+    -->
+    <blockquote cite="https://www.freecodecamp.org/news/learn-to-code-book/">
+        "Can you imagine what it would be like to be a successful developer? 
+        To have built software systems that people rely upon?"
+    </blockquote>
+
+    <!--
+        You can write the text directly within the block quotation element 
+        or wrap it within one or more paragraph elements. 
+        This is helpful when the text has multiple paragraphs, 
+        but you want to keep them within the same block quote.    
+    -->
+    <blockquote cite="https://www.freecodecamp.org/news/learn-to-code-book/">
+        <p>Build your projects. Show them to your friends. Build projects for your friends.</p>
+        <p>Build your network. Help the people you meet along the way. What goes around comes around. You'll get what's coming to you.</p>   
+        <p>It is not too late. Life is long.</p>
+        <p>You will look back on this moment years from now and be glad you made a move.</p>
+    </blockquote>
+
+    <!--
+        If you want to attribute the source visually, you can add a citation element, 
+        cite, outside of the block quotation element. 
+        This is different from the cite attribute. 
+        The citation element is an HTML element that you can use to mark up the title 
+        of a referenced creative work like a book article, song, film, website, or research paper.
+    -->
+    <div>
+        <blockquote cite="https://www.freecodecamp.org/news/learn-to-code-book/">
+            Can you imagine what it would be like to be a successful developer? To have built software systems that people rely upon?
+        </blockquote>
+        <p>—Quincy Larson, <cite>How to Learn to Code and Get a Developer Job [Full Book].</cite></p>
+    </div>
+    <!--
+        The block quotation element contains quoted text. 
+        Below the element you can see a paragraph element with the name of the author, 
+        followed by a citation element. 
+        The citation element contains the title of the book where the quotation came from.
+    -->
+
+
+    <!--
+        You should use block quotes like these for long quotations from other sources. 
+        But sometimes you will only need to quote a few words within a larger paragraph.
+        That's exactly what the inline quotation element is for. 
+        It's for short inline quotations from other sources. 
+        Most modern browsers will add quotation marks around the inline quote automatically 
+        when you use this element.
+        You can also add a cite attribute to attribute the source. 
+    -->
+    <p>
+        As Quincy Larson said,
+        <q cite="https://www.freecodecamp.org/news/learn-to-code-book/">
+            Momentum is everything.
+        </q>
+    </p>    
+</body>
+</html>
