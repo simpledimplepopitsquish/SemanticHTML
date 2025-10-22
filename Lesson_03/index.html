@@ -71,6 +71,41 @@
         <q cite="https://www.freecodecamp.org/news/learn-to-code-book/">
             Momentum is everything.
         </q>
-    </p>    
+    </p>
+    
+    <!--How Do You Display Abbreviations in HTML?-->
+
+    <!--
+        There are two common forms of abbreviations: acronyms and initialisms.
+
+        An acronym is a word formed from the initial letters of a phrase, 
+        with each letter representing the first letter of a word in that phrase.
+        Graphical User Interface → GUI
+
+        An initialism is formed from the initial letters of a phrase, 
+        with each letter representing the first letter of a word in that phrase.
+        HyperText Markup Language → HTML
+
+        In HTML, you can use the abbreviation element to represent both acronyms and initialisms. 
+        The abbreviation element can also be used for shortened forms of words.
+    -->
+        <p><abbr>HTML</abbr> is the foundation of the web.</p>
+    <!--
+        In the browser, you'll see that nothing has really changed. 
+        It still looks like normal text. 
+        The abbreviation element is providing helpful context behind the scenes, 
+        but users will still see the initialism as normal text.
+
+        If you want to help users understand what this initialism means, 
+        you can show its full form with the title attribute.
+        The title attribute is optional, but if you decide to include it, 
+        it must be a human readable description of the abbreviation, acronym, or initialism.
+    -->
+        <p><abbr title="HyperText Markup Language">HTML</abbr> is the foundation of the web.</p>
+    <!--
+        Usually, the style of the abbreviation element will change when you add this attribute. 
+        Some browsers may display a dotted underline, while others may convert the contents to small caps, 
+        or even assign certain default styles.
+        When users hover over the abbreviation, they will see a tooltip with the full form.
 </body>
 </html>
