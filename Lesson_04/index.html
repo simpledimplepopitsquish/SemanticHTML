@@ -12,13 +12,42 @@
     <section>
         <h2 class="highlight">Mathematical Equations and Chemical Formulas</h2>
         <p>
-            The superscript element is used to display a piece of text as a superscript. 
+            The superscript element is used to display a piece of text as a <strong>superscript</strong>(<code>&lt;sup&gt;</code>). 
             A superscript is a symbol or letter printed above the normal line of text.
-            <br>
-            Here is an example using the superscript element to illustrate exponents:
-            <pre><code>&lt;p&gt;2&lt;sup&gt;2&lt;/sup&gt;(2 squared) is 4.&lt;/p&gt;</code></pre>
+            <details>
+                <summary>Superscript example</summary>
+                <pre><code>&lt;p&gt;2&lt;sup&gt;2&lt;/sup&gt;(2 squared) is 4.&lt;/p&gt;</code></pre>
+                <p>2<sup>2</sup> (2 squared) is 4.</p>
+            </details>
         </p>
-        <p>2<sup>2</sup> (2 squared) is 4.</p>
+        <p>
+            Common use cases for the superscript element would include exponents, 
+            superior lettering, and ordinal numbers. 
+            <details>
+                <summary>Here is an example using the superscript element for superior lettering</summary>
+                <pre><code>&lt;p&gt;Monseigneur is often written as &lt;strong&gt;M&lt;sup&gt;gr&lt;/sup&gt;&lt;/strong&gt;.&lt;/p></code></pre>
+                Monseigneur is often written as <strong>M<sup>gr</sup></strong>.
+            </details>
+        </p>
+        <p>Superior lettering refers to letters written in superscript, 
+            usually to indicate abbreviations. 
+            The letters <b>g</b> and <b>r</b>
+            are wrapped inside superscript tags to illustrate the abbreviation in this example.
+        </p>
+        <p>
+            It is important to note that the superscript element should only be used for typographical reasons. 
+            <mark>Note:</mark> If you want to style a piece of text with a raised baseline, 
+            then you should use CSS instead of the superscript element.
+        </p>
+        <p>
+            To represent chemical equations inside HTML, you would use the <strong>subscript</strong>(<code>&lt;sub&gt;</code>) element. 
+            This element uses a subscript which displays a lowered baseline using smaller text.
+            <details>
+                <summary>Subscript example</summary>
+                <p>CO<sub>2</sub></p>
+                <pre><code>&lt;p&gt;CO&lt;sub&gt;2&lt;/sub&gt;&lt;/p&gt;</code></pre>
+            </details>
+        </p>
     </section>
   </body>
 </html>
