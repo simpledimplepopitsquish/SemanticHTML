@@ -12,6 +12,7 @@
     <section>
         <h2 class="highlight">Mathematical Equations and Chemical Formulas</h2>
         <article>
+            <h3>Superscript and Subscript Elements</h3>
             <p>
                 The superscript element is used to display a piece of text as a <strong>superscript</strong> (<code>&lt;sup&gt;</code>). 
                 A superscript is a symbol or letter printed above the normal line of text.
@@ -29,18 +30,18 @@
                     <summary>Here is an example using the superscript element for superior lettering</summary>
                     <pre><code>&lt;p&gt;Monseigneur is often written as &lt;strong&gt;M&lt;sup&gt;gr&lt;/sup&gt;&lt;/strong&gt;.&lt;/p></code></pre>
                     Monseigneur is often written as <strong>M<sup>gr</sup></strong>.
-                </details>
-            <p>
-                Superior lettering refers to letters written in superscript, 
-                usually to indicate abbreviations. 
-                The letters <b>g</b> and <b>r</b>
-                are wrapped inside superscript tags to illustrate the abbreviation in this example.
-            </p>
-            <p>
-                It is important to note that the superscript element should only be used for typographical reasons. 
-                <mark>Note:</mark> If you want to style a piece of text with a raised baseline, 
-                then you should use CSS instead of the superscript element.
-            </p>
+                    <p>
+                        Superior lettering refers to letters written in superscript, 
+                        usually to indicate abbreviations. 
+                        The letters <b>g</b> and <b>r</b>
+                        are wrapped inside superscript tags to illustrate the abbreviation in this example.
+                    </p>
+                    <p>
+                        It is important to note that the superscript element should only be used for typographical reasons. 
+                        <br><mark>Note:</mark> If you want to style a piece of text with a raised baseline, 
+                        then you should use CSS instead of the superscript element.
+                    </p>
+            </details>
         </article>
         <article>
             <p>
@@ -57,22 +58,23 @@
     <section>
         <h2 class="highlight">How Do You Represent Computer Code in HTML?</h2>
         <article>
+            <h3>The <code>&lt;code&gt;</code> Element</h3>
             <p>
-                The inline &lt;code&gt; element is used to represent short snippets of code inside text. 
-                Common use cases for the &lt;code&gt; element would be for technical articles and documentation pages.
+                The inline <code>&lt;code&gt;</code> element is used to <b>represent short snippets of code inside text</b>. 
+                Common use cases for the <code>&lt;code&gt;</code> element would be for technical articles and documentation pages.
             </p>
             <details>
                 <summary>Code element example</summary>
                 <pre><code>&lt;p&gt;To create a hyperlink, use the &lt;code&gt;&lt;a href="url"&gt;link text&lt;/a&gt;&lt;/code&gt; element.&lt;/p&gt;</code></pre>
                 <p>To create a hyperlink, use the <code>&lt;a href="url"&gt;link text&lt;/a&gt;</code> element.</p>
                 <em>
-                    *By wrapping this code snippet inside &lt;code&gt; tags, 
+                    *By wrapping this code snippet inside <code>&lt;code&gt;</code> tags, 
                     it communicates to the browser that the text is a piece of inline code.
                 </em>
             </details>
             <p>
                 If you want to represent multiple lines of code, 
-                you will need to place a code element inside a preformatted text element.
+                you will need to place a code element inside a <b>preformatted text element</b> or <code>&lt;pre&gt;</code>.
             </p>
             <details>
                 <summary>Preformatted text and code element example</summary>
@@ -85,6 +87,61 @@
                     *When using the pre element, you will need to be mindful of spacing 
                     because it will display exactly as written inside the HTML document.
                 </em>
+            </details>
+        </article>
+    </section>
+    <section>
+        <h2 class="highlight">What Are the U, S, and Ruby Elements Used For, and How Do They Work?</h2>
+        <article>
+            <h3>The <code>&lt;u&gt;</code> Element</h3>
+            <p>The <b>unarticulated annotation element</b>, or <code>&lt;u&gt;</code> element for short, is used to represent inline text that has non-textual annotation applied.</p>
+            <details>
+                <summary><code>&lt;u&gt;</code> element example</summary>
+                <pre><code>&lt;p&gt;This is an &lt;u&gt;underlined&lt;/u&gt; word.&lt;/p&gt;</code></pre>
+                <p>This is an <u>underlined</u> word.</p>
+                <p>
+                    The default styling for the <code>&lt;u&gt;</code> element is a black underline underneath the text. 
+                    In HTML4, the <code>&lt;u&gt;</code> element was used for styling purposes. 
+                    But in HTML5, the <code>&lt;u&gt;</code> element should only be used to indicate that text has non-textual annotation applied. 
+                    <br>If you want to style a piece of text with an underline, you should use CSS instead of HTML.
+                </p>
+            </details>
+        </article>
+        <article>
+            <h3>The <code>&lt;s&gt;</code> Element</h3>
+            <p>
+                The <b>strikethrough element</b>, or <code>&lt;s&gt;</code> element for short, is used to represent text that is no longer accurate or relevant. 
+                The default styling for the <code>&lt;s&gt;</code> element is a horizontal line through the center of the text.
+            </p>
+            <details>
+                <summary><code>&lt;s&gt;</code> element example</summary>
+                <pre><code>
+    &lt;p&gt;&lt;s&gt;Tomorrow's hike will be meeting at noon.&lt;/s&gt;&lt;/p&gt;
+    &lt;p&gt;Due to unforeseen weather conditions, the hike has been canceled.&lt;/p&gt;
+                </code></pre>
+                <p><s>Tomorrow's hike will be meeting at noon.</s></p>
+                <p>Due to unforeseen weather conditions, the hike has been canceled.</p>
+                <p>In this example, the first sentence is crossed out because the hike was canceled due to weather reasons.</p>
+                <p>The <code>&lt;s&gt;</code> element should never be used to just to show changes to a document. More appropriate elements in that case would be the deleted text element and the inserted text element.</p>
+            </details>
+        </article>
+        <article>
+            <h3>The <code>&lt;ruby&gt;</code> Element</h3>
+            <p>
+                The <code>&lt;ruby&gt;</code> element represents <b>small text shown above or below the main text</b>. 
+                It is typically used to show the pronunciation of East Asian characters.
+            </p>
+            <details>
+                <summary><code>&lt;ruby&gt;</code> example</summary>
+                <pre><code>&lt;ruby&gt;明日&lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;Ashita&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;&lt;/ruby&gt;</code></pre>
+                <ruby>明日<rp>(</rp><rt>Ashita</rt><rp>)</rp></ruby>
+                <pre><code>&lt;ruby&gt;水&lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;mizu&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;&lt;/ruby&gt;</code></pre>
+                <ruby>水<rp>(</rp><rt>mizu</rt><rp>)</rp></ruby>
+                <p>
+                    The <code>&lt;rp&gt;</code> element provides fallback parentheses for browsers that don't support ruby annotations.<br>
+                    The <code>&lt;rt&gt;</code> element defines the ruby text, typically used for pronunciation or translation.<br>
+                    While the ruby element can be used for other types of annotations, the most common use case is for East Asian typography.
+                </p>
             </details>
         </article>
     </section>
